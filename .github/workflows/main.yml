@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    # The type of runner that the job will run on
+      - name: Merge in gh-pages
+        run: |
+          git checkout gh-pages
+          git merge master
