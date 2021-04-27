@@ -1,2 +1,0 @@
-# EdenWorld
-CV numérique
